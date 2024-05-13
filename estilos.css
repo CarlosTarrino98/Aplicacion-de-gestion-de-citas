@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c7d4f7af;
+    background-image: url('img/imagen de fondo.webp');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #5a5a5a;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #095d70b5;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header img {
+    max-height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1%;
+}
+
+#Citasprogramadas {
+    color: #000000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+#formcita {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+form h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+    border-color: #4a69bd;
+}
+
+button {
+    background-color: #095d70fd;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #012f3afd;
+}
+
+button.editar {
+    margin-right: 10px;
+}
+
+button.eliminar {
+    background-color: #f44336da;
+    color: white;
+    border-color: #f44336da;
+}
+
+button.eliminar:hover {
+    background-color: #da190bda;
+    border-color: #dc3545da;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+    background-color: #011e4f;
+    color: white;
+}
+
+tr {
+    background-color: #136183be;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #136183be;
+}
+
+footer {
+    background-color: #095d7093;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}

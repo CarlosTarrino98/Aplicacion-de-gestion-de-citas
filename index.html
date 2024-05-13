@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MedacDent - Gestión de Citas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img\icono.png" type="image/x-icon"> 
+</head> 
+<body> 
+    <header>
+        <img src="img/icono.png" alt="Logo de MedacDent"> 
+        <h1>MedacDent</h1>
+    </header>
+
+    <section>
+        <form id="formCita">
+            <h2>Programar Cita</h2>
+
+            <!-- Campo oculto para almacenar id de la cita -->
+            <input type="hidden" id="idCita">
+
+            <!-- Datos de la cita -->
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+
+            <!-- Datos del paciente -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" pattern="[A-Za-z ]+" title="Solo letras y espacios permitidos" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" pattern="[A-Za-z ]+" title="Solo letras y espacios permitidos" required>
+            
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" pattern="[0-9]{8}[A-Za-z]" title="8 números seguidos de una letra" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" pattern="[0-9]{9}" title="Solo 9 números permitidos" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required>
+
+            <!-- Observaciones -->
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones"></textarea>
+           
+            <!-- Guardar cita -->
+            <button id="btnGuardar" type="submit">Guardar Cita</button>
+            <button id="btnModificar" style="display:none;" type="submit">Modificar Cita</button>
+
+        </form>
+    </section>
+    
+    <h2 id="Citasprogramadas"> <b>Citas programadas</b></h2>
+    
+    <section> 
+        <table id="tablaCitas">
+            <thead>
+                <tr>
+                    <th>Orden</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>DNI</th>
+                    <th>Teléfono</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Observaciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las citas se añadirán aquí -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p><b>Contacto:</b> +34 123 456 789</p>
+        <p><b>Horario:</b> 08:00 - 20:00</p>
+        <p><b>Dirección:</b> C. de Albalá, 5, San Blas-Canillejas, 28037 Madrid</p>
+        <p><a href="https://www.google.com/maps?q=C. de Albalá, 5, San Blas-Canillejas, 28037 Madrid" 
+                target="_blank">Ver en Google Maps</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
